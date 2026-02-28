@@ -3,8 +3,8 @@ from openai import OpenAI
 from streamlit_js_eval import streamlit_js_eval
 
 
-st.set_page_config(page_title="Streamlit Chat", page_icon="💬")
-st.title("Chatbot")
+st.set_page_config(page_title="Interview Chat", page_icon="💬")
+st.title("Interview Chatbot")
 
 #session set up and initialization
 if "setup_complete" not in st.session_state:
@@ -60,6 +60,7 @@ if not st.session_state["setup_complete"]:
         st.session_state["position"] = "Data Scientist"    
     if "company" not in st.session_state:
         st.session_state["company"] = "Amazon"
+        
 
     col1,col2 = st.columns(2)
     with col1:
@@ -71,7 +72,7 @@ if not st.session_state["setup_complete"]:
     with col2:
         st.session_state["position"] = st.selectbox(
             "Choose a position",
-            ("Data Scientist", "Data Engineer", "Ml Engineer", "BI Analyst", "Financial Analyst")
+            ("Software developer", "Project Manager" ,"Data Scientist", "Data Engineer", "ML Engineer", "BI Analyst", "Financial Analyst")
         )
 
     st.session_state["company"] = st.selectbox(
