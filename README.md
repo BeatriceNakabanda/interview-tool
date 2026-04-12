@@ -6,12 +6,15 @@ The application uses a Large Language Model to act as an HR interviewer. It asks
 
 # Features
 
-• Simulated HR interview conversation
-• Personalized interview questions based on user profile
-• Real-time chat interface
-• Automated performance scoring
-• AI-generated feedback after the interview
-• Restart interview functionality
+- Simulated HR interview conversation
+- Personalized interview questions based on user profile
+- Real-time chat interface
+- Automated performance scoring
+- AI-generated feedback after the interview
+- Restart interview functionality
+
+# Live Demo
+[View the Live Streamlit App](https://interview-tool-z.streamlit.app/)
 
 # How It Works
 
